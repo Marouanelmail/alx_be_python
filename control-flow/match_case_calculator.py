@@ -6,14 +6,27 @@ operation = input("Choose the operation (+, -, *, /): ")
 #resultminus = num1 - num2
 #resulttimes = num1 * num2
 #resultdiv = num1 / num2
-if operation == "+":
-    print(f"the result is {num1 + num2}.")
-elif operation == "*":
-    print(f"the result is {num1 * num2}.")
-elif operation == "-":
-    print(f"the result is {num1 - num2}.")
-elif operation == "/":
-    if num2 == 0:
-        print("Cannot divide by zero.")
-    else:
-        print(f"the result is {num1 / num2}.")
+# if operation == "+":
+#     print(f"the result is {num1 + num2}.")
+# elif operation == "*":
+#     print(f"the result is {num1 * num2}.")
+# elif operation == "-":
+#     print(f"the result is {num1 - num2}.")
+# elif operation == "/":
+#     if num2 == 0:
+#         print("Cannot divide by zero.")
+#     else:
+#         print(f"the result is {num1 / num2}.")
+match operation:
+    case "+":
+        print(f"the result is {num1 + num2}.")
+    case "-":
+        print(f"the result is {num1 - num2}.")
+    case "*":
+        print(f"the result is {num1 * num2}.")
+    case "/":
+        if num2 == 0:
+            print("Cannot divide by zero.")
+        else:
+            print(f"the result is {num1 / num2}.")
+
