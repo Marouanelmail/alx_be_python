@@ -28,6 +28,8 @@ try:
             print(f"{temp}°F is {convert_to_celsius(temp)}°C")
         case "C":
             print(f"{temp}°C is {convert_to_fahrenheit(temp)}°F")
+        case _:
+            print("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
 except ValueError:
     print("Invalid temperature. Please try numeric value")
 
