@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-FAHRENHEIT_TO_CELSIUS_FACTOR = (5/9)
-CELSIUS_TO_FAHRENHEIT_FACTOR = (9/5)
+global FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+global CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 temp = int(input("Enter the temperature to convert: "))
 
 def convert_to_celsius(fahrenheit):
@@ -18,3 +18,4 @@ match cel_or_fahr:
         print(f"{temp}°F is {convert_to_fahrenheit(temp)}°C")
     case "C":
         print(f"{temp}°C is {convert_to_celsius(temp)}°F")
+        
