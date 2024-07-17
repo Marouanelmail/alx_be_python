@@ -31,5 +31,5 @@ try:
         case _:
             print("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
 except ValueError:
-    print("Invalid temperature. Please try numeric value")
+    print("Invalid temperature. Please enter a numeric value.")
 
