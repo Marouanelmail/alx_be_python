@@ -3,7 +3,7 @@
 # global CELSIUS_TO_FAHRENHEIT_FACTOR
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
-temp = int(input("Enter the temperature to convert: "))
+
 
 def convert_to_celsius(fahrenheit):
     """Convert fahrenheit to celisius"""
@@ -20,7 +20,7 @@ def convert_to_fahrenheit(celisius):
     return fahrenheit
 # def convert_to_fahrenheit(celsius):
 #     return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
-
+temp = int(input("Enter the temperature to convert: "))
 cel_or_fahr = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 match cel_or_fahr:
     case "F":
